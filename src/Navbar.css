@@ -1,0 +1,61 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  height: 80px;
+  width: 97vw;
+}
+
+.navbar__icon {
+  object-fit: contain;
+  height: 90px;
+  margin-left: 2vw;
+}
+
+.navbar__center {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  /* fit-content is pretty handy */
+  max-width: fit-content;
+  padding: 10px;
+  height: 30px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  margin-left: 7vw;
+}
+
+/* this does the trick of making the rectangular serch bar inside disappear*/
+.navbar__center > input {
+  border: none;
+  padding: 10px;
+  /* outline-width gets rid of outline in the searchbar */
+  outline-width: 0;
+  width: 17vw;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 20.5vw;
+}
+
+.navbar__rightGlobe {
+  align-items: center;
+  padding-top: 8px;
+}
+
+.navbar__rightAvatar {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  max-width: fit-content;
+  padding: 5px 5px 5px 15px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+}
